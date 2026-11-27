@@ -1,0 +1,16 @@
+{
+  "name": "enr-espnow",
+  "version": "0.1.0",
+  "description": "Authenticated, forward-secret and post-compromise-secure messaging over ESP-NOW (ENR protocol).",
+  "keywords": ["esp-now", "espnow", "security", "encryption", "ratchet", "x25519", "esp32"],
+  "repository": { "type": "git", "url": "https://github.com/ece-bappy/enr-espnow.git" },
+  "license": "MIT",
+  "frameworks": ["arduino", "espidf"],
+  "platforms": ["espressif32"],
+  "headers": ["ENR_ESPNOW.h", "enr.h"],
+  "examples": [
+    { "name": "Controller", "base": "examples/Controller", "files": ["Controller.ino"] },
+    { "name": "Node", "base": "examples/Node", "files": ["Node.ino"] },
+    { "name": "KeyTool", "base": "examples/KeyTool", "files": ["KeyTool.ino"] }
+  ]
+}
